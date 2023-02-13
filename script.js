@@ -305,8 +305,8 @@ function reveal() {
 
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "https://www.youtube.com/embed/MqazV4hbu8E?autoplay=1");
-//     ifrm.style.width = `${288}px`;
-//     ifrm.style.height = `${191}px`;
+    // ifrm.style.width = `${288}px`;
+    // ifrm.style.height = `${191}px`;
     ifrm.style.border = 'none';
     document.querySelector('#video').appendChild(ifrm);
 
@@ -318,11 +318,5 @@ const videoContainer = document.getElementById('video');
 toggleBtn.addEventListener('click', function () {
     videoContainer.style.display = 'block';
 });
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
 
 
